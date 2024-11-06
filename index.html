@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>预约系统</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+    <h1>预约系统</h1>
+    <form id="reservationForm">
+        <label for="computerSelect">选择电脑:</label>
+        <select id="computerSelect">
+            <option value="1(广联达)">1(广联达)</option>
+            <option value="2(广联达)">2(广联达)</option>
+            <option value="3(广联达)">3(广联达)</option>
+            <option value="4(广联达)">3(广联达)</option>
+            <option value="5">计算机5</option>
+            <option value="6">计算机6</option>
+            <option value="7">计算机7</option>
+            <option value="8">计算机8</option>
+            <option value="9">计算机9</option>
+        </select>
+
+        <label for="dateInput">选择日期:</label>
+        <input type="date" id="dateInput">
+
+        <label for="timeSelect">选择时间段:</label>
+        <select id="timeSelect">
+            <option value="morning">上午</option>
+            <option value="afternoon">下午</option>
+            <option value="allDay">全天</option>
+        </select>
+
+        <button type="submit">预约</button>
+    </form>
+
+    <div id="reservations">
+        <h2>已预约列表:</h2>
+        <ul id="reservationList"></ul>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
